@@ -1,0 +1,55 @@
+﻿{
+  "name": "IISISS35ListInv",
+  "modelName": "i-i-s-i-s-s35-list-inv",
+  "className": "ListInv",
+  "nameSpace": "IIS.ISS35",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "investment",
+      "relatedTo": "i-i-s-i-s-s35-investment",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "support",
+      "relatedTo": "i-i-s-i-s-s35-support",
+      "inverse": "listInv"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ListInvE",
+      "modelName": "i-i-s-i-s-s35-list-inv",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

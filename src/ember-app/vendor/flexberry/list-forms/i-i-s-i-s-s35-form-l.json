@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-s-s35-form-e",
+  "editForm": "i-i-s-i-s-s35-form-e",
+  "external": false,
+  "caption": "Form",
+  "name": "IISISS35FormL",
+  "className": "FormL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-s-s35-form",
+      "modelProjection": "FormL"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+﻿{
+  "applicationCaption": "I s s35",
+  "applicationTitle": "I s s35",
+  "items": [
+    {
+      "link": null,
+      "menuName": "i-s-s35",
+      "caption": "ISS35",
+      "title": "ISS35",
+      "children": [
+        {
+          "link": "i-i-s-i-s-s35-support-l",
+          "menuName": null,
+          "caption": "Support",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-s-s35-form-l",
+          "menuName": null,
+          "caption": "Form",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-s-s35-investment-l",
+          "menuName": null,
+          "caption": "Investment",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-s-s35-sub-industry-l",
+          "menuName": null,
+          "caption": "Sub industry",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-s-s35-size-l",
+          "menuName": null,
+          "caption": "Size",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

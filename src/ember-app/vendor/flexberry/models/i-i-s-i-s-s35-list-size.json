@@ -1,0 +1,55 @@
+﻿{
+  "name": "IISISS35ListSize",
+  "modelName": "i-i-s-i-s-s35-list-size",
+  "className": "ListSize",
+  "nameSpace": "IIS.ISS35",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "size",
+      "relatedTo": "i-i-s-i-s-s35-size",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "support",
+      "relatedTo": "i-i-s-i-s-s35-support",
+      "inverse": "listSize"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ListSizeE",
+      "modelName": "i-i-s-i-s-s35-list-size",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

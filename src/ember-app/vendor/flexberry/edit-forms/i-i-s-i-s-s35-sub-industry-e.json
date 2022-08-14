@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Sub industry",
+  "name": "IISISS35SubIndustryE",
+  "className": "SubIndustryE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-s-s35-sub-industry",
+      "modelProjection": "SubIndustryE"
+    }
+  ]
+}

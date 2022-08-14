@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-s-s35-size-e",
+  "editForm": "i-i-s-i-s-s35-size-e",
+  "external": false,
+  "caption": "Size",
+  "name": "IISISS35SizeL",
+  "className": "SizeL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-s-s35-size",
+      "modelProjection": "SizeL"
+    }
+  ]
+}

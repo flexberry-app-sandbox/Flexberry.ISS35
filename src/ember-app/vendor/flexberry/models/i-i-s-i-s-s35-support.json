@@ -1,0 +1,114 @@
+﻿{
+  "name": "IISISS35Support",
+  "modelName": "i-i-s-i-s-s35-support",
+  "className": "Support",
+  "nameSpace": "IIS.ISS35",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "form",
+      "relatedTo": "i-i-s-i-s-s35-form",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "listInv",
+      "relatedTo": "i-i-s-i-s-s35-list-inv",
+      "inverse": "support"
+    },
+    {
+      "name": "listIndustry",
+      "relatedTo": "i-i-s-i-s-s35-list-industry",
+      "inverse": "support"
+    },
+    {
+      "name": "listSize",
+      "relatedTo": "i-i-s-i-s-s35-list-size",
+      "inverse": "support"
+    }
+  ],
+  "projections": [
+    {
+      "name": "SupportE",
+      "modelName": "i-i-s-i-s-s35-support",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ListInvE",
+          "caption": "List inv",
+          "name": "listInv",
+          "relatedTo": "i-i-s-i-s-s35-list-inv",
+          "inverse": null
+        },
+        {
+          "projectionName": "ListSizeE",
+          "caption": "List size",
+          "name": "listSize",
+          "relatedTo": "i-i-s-i-s-s35-list-size",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "SupportL",
+      "modelName": "i-i-s-i-s-s35-support",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
